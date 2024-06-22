@@ -49,7 +49,7 @@ forge script script/DeployRune.s.sol --broadcast --rpc-url <YOUR_RPC_URL> --priv
 - Submit to claim tokens.
 
 ### Demo
-A live demo of the platform can be accessed at [Fleek URL].
+A live demo of the platform can be accessed at [].
 
 <hr>
 
