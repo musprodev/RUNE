@@ -1,66 +1,19 @@
-## Foundry
+## RuneTokenClone
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+1. Founder inscribes full supply of RUNE token to their wallet:
+ - This is handled by the contract's constructor, which mints the full supply to the `siteOwner`.
 
-Foundry consists of:
+2. Dashboard to create whitelist rounds and upload address list:
+ - The `createWhitelistRound` function allows the founder to create multiple whitelist rounds.
+ - The `addToWhitelist` function allows the founder to add addresses to each whitelist round.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+3. Option to add a fee on each whitelist/public round or mark them as free claims:
+ - The `setServiceFee` function allows the founder to set a fee for each round.
+ - Fee management is included within the claim function.
 
-## Documentation
+4. Fee distribution (10% to site owner, 90% to founders):
+ - This logic is implemented in the claim function, where the fee is split and distributed accordingly.
 
-https://book.getfoundry.sh/
+5. Normal users pay network fees for distribution + additional fee if required:
+ - The claim function ensures that users pay the required fee along with any network fees for claiming tokens.
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
