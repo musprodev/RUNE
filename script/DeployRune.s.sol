@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import "forge-std/Script.sol";
-import "../src/RuneToken.sol";
+import {Script} from "forge-std/Script.sol";
+import {RuneToken} from "../src/RuneToken.sol";
 
 contract DeployRuneToken is Script {
     function setUp() public {}

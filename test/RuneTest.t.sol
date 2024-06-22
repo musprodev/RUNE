@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import "forge-std/Test.sol";
-import "../src/RuneToken.sol";
+import {Test} from "forge-std/Test.sol";
+import {RuneToken} from "../src/RuneToken.sol";
 
 contract RuneTokenTest is Test {
     RuneToken public runeToken;
