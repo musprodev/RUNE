@@ -20,14 +20,6 @@ This contract allows founders to manage whitelist rounds for token claims and fo
 ```
 forge script script/DeployRune.s.sol --broadcast --rpc-url <YOUR_RPC_URL> --private-key <YOUR_PRIVATE_KEY>
 ```
-
-**Imports issue on Remix**
-Replace those with these
-```
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
-
-```
 2. **Note the deployed contract address.**
 
 ### Using the Dashboard
@@ -57,7 +49,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 - Submit to claim tokens.
 
 ### Demo
-A live demo of the platform can be accessed at [ 0xc002D138b53Cc701De2557D942b68728Af23665C ].
+A live demo of the smart contract can be accessed on Sepolia testnet at [ 0xc002D138b53Cc701De2557D942b68728Af23665C ].
 
 <hr>
 
